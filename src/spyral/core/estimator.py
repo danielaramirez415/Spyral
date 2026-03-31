@@ -333,5 +333,5 @@ def estimate_physics_pass(
             sqrt_dEdx=np.sqrt(np.fabs(dEdx)),
             dE=charge_deposited,
             arclength=arclength,
-            direction=direction,
+            direction=direction.value,
         )

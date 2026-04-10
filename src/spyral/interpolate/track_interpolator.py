@@ -251,7 +251,7 @@ class TrackInterpolator:
         # Trim stopped region
         # The mesh repeats the last position inside the detector
         removal = np.full(len(trajectory),True)
-        previous_element = np.fill(3, -1.0)
+        previous_element = np.full(3, -1.0)
         for idx, element in enumerate(trajectory): 
             if np.all(previous_element[:] == element[:]):
                 removal[idx] = False

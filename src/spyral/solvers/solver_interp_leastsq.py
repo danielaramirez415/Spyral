@@ -35,7 +35,7 @@ def distances(track: np.ndarray, data: np.ndarray, weights: np.ndarray) -> np.nd
     """
     assert track.shape[1] == 3
     assert data.shape[1] == 3
-    assert weights.shape[3] == 3
+    assert weights.shape[1] == 3
 
     dists = np.zeros((len(data), len(track)))
     error = np.zeros(len(data))
